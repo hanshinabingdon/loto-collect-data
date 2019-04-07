@@ -4,9 +4,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{D6F91D0C-6A5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E937F6CA-0871-42D7-BC35-DEC29F778E27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loto7", "Src\Loto7\Loto7.csproj", "{F5E4EA6F-E518-4D45-A090-31D594422C9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F5E4EA6F-E518-4D45-A090-31D594422C9D} = {D6F91D0C-6A57-4D05-BDBB-562151971E31}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5E4EA6F-E518-4D45-A090-31D594422C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E4EA6F-E518-4D45-A090-31D594422C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E4EA6F-E518-4D45-A090-31D594422C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E4EA6F-E518-4D45-A090-31D594422C9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
