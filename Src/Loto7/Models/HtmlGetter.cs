@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using AngleSharp.Html.Dom;
@@ -9,17 +8,21 @@ namespace Loto7.Models
 {
     public class HtmlGetter
     {
+        /// <summary>
+        /// 指定されたURLからHTMLを取得する
+        /// </summary>
+        /// <param name="url">対象URL</param>
+        /// <returns>HTML</returns>
         public static IHtmlDocument GetFromUrl(string url)
         {
-            var doc = Get(url).Result;
-            return doc;
+            return Get(url).Result;
         }
 
         /// <summary>
         /// html取得実態
         /// </summary>
-        /// <param name="url"></param>
-        /// <returns></returns>
+        /// <param name="url">対象URL</param>
+        /// <returns>html取得タスク</returns>
         private static async Task<IHtmlDocument> Get(string url)
         {
             using (var client = new HttpClient())
