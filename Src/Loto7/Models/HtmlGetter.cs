@@ -12,23 +12,6 @@ namespace Loto7.Models
         public static IHtmlDocument GetFromUrl(string url)
         {
             var doc = Get(url).Result;
-
-            // 対象のテーブルは一つしかない
-            var table = doc
-                .GetElementsByClassName("bun_box2")
-                .First()
-                .GetElementsByTagName("tbody")
-                .Single();
-
-            // ヘッダを除いた当選情報を取得
-            var data = table
-                .GetElementsByTagName("tr")
-                .Where(x => !(x.GetElementsByTagName("th").Any()));
-
-            foreach (var tr in data)
-            {
-            }
-
             return doc;
         }
 
